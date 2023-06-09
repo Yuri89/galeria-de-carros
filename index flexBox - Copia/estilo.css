@@ -1,0 +1,122 @@
+:root{
+    --azul-para-verde-claro: #00ffea;
+    --azul-para-verde-meio: #009286;
+    --azul-para-verde-escuro: #00413b;
+    --azul-para-roxo-claro: #6f00ff;
+    --azul-para-roxo-meio: #30006e;
+    --azul-para-roxo-escuro: #21004d;
+    --azul-para-azul-claro: #829fff;
+    --azul-para-azul-meio: #0028ac;
+    --azul-para-azul-escuro: #00124d;
+    --branco:#fff;
+    --cinza:#999;
+    --cinza-preto:#3f3f3f;
+    --preto:#252525;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexNav{
+    display: flex;
+    justify-content: space-between;
+    background: var(--azul-para-azul-escuro);
+    color: var(--branco);
+    text-decoration: none;
+    height: 50px;
+    align-items: center;
+}
+
+.flexNav a{
+    text-decoration: none;
+    color: var(--branco);
+    margin-left: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+.flexNav a:hover{
+    background-color: aqua;
+    padding: 10px;
+}
+.flexNav a:last-child{
+    margin-right: 40px;
+}
+.logo1{
+    margin-left: 15px;
+    font-size: 50px;
+    font-family: "Tourney";
+}
+.logo2{
+    margin-left: 15px;
+    font-size: 30px;
+    font-family: "Oswald";
+}
+
+.slider{
+    width: 300%;
+    position: relative;
+    display: flex;
+}
+
+.slide-content{
+    overflow: hidden;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    position: relative;
+    width: auto;
+}
+
+.slide img{
+    width: 100%;
+}
+
+.manual-navigation{
+    position: absolute;
+    left: 37%;
+    margin-top: -5%;
+    width: 25%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.manual-btn{
+    border: 2px solid var(--branco);
+    border-radius: 30px;
+    padding: 5px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    transition: 0.8s;
+}
+
+.manual-btn:hover{
+    background-color: var(--branco);
+    transition: 0.3s;
+}
+
+.first{
+    
+    background-color: var(--branco);
+}
+#radio2:checked ~ .first{
+    margin-left: -200%;
+    background-color: var(--branco);
+}
+#radio3:checked ~ .first{
+    margin-left: -300%;
+    background-color: var(--branco);
+}
